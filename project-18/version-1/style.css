@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-position: center center;
+  background-size: cover;
+  transition: 0.4s;
+}
+
+.slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.slider-container::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.674);
+    height: 100%;
+    width:100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.slide{
+    display: none;
+}
+
+.slide.active{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    z-index: 2000;
+}
+
+.arrow{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+}
+
+.left-arrow{
+    left: 20%;
+}
+
+.right-arrow{
+    right: 20%;
+}

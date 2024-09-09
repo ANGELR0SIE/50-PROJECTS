@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(65, 92, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    transition: all .4s ease-in;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+}
+
+span{
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .4s ease-in;
+}
+
