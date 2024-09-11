@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(25, 25, 65);
+    color: #fff;
+}
+
+h1{
+ padding: 30px;
+
+}
+
+label{
+    padding: 20px;
+}
+
+input{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 5px solid darkblue;
+}
+
+input:focus{
+    outline: none;
+}
