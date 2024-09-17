@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .banner-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    border: 2px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .banner-wrapper {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .banner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Background colors for each slide */
+  .slide:nth-child(1) {
+    background-color: #f8b400; /* Yellow */
+  }
+  
+  .slide:nth-child(2) {
+    background-color: #ff6f61; /* Coral */
+  }
+  
+  .slide:nth-child(3) {
+    background-color: #6b5b95; /* Purple */
+  }
+  
+  .slide:nth-child(4) {
+    background-color: #88d8b0; /* Light Green */
+  }
+  
+  /* Buttons */
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
