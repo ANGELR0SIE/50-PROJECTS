@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation with Overlay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li class="has-overlay">
+        <a href="#" class="nav-link">Services</a>
+        <div class="overlay">
+          <ul class="overlay-links">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">App Development</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="has-overlay">
+        <a href="#" class="nav-link">Products</a>
+        <div class="overlay">
+          <ul class="overlay-links">
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
